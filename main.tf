@@ -4,14 +4,12 @@ bluemix_api_key = "${var.bluemix_api_key}"
 
 resource "null_resource" "prepare_app_zip" {
   triggers = {
-    app_version = "${var.app_version}"
+    app_version = "88"
     git_repo = "${var.git_repo}"
   }
   provisioner "local-exec" {
     command = <<EOF
-       touch abcd.txt
-       ls -al
-       rm -rf abcd.txt
+       ps -eaf 
         EOF
   }
 }
