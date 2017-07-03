@@ -9,7 +9,9 @@ resource "null_resource" "prepare_app_zip" {
   }
   provisioner "local-exec" {
     command = <<EOF
-        ls -lR /
+       touch abc.txt
+       ls -al
+       rm -rf touch abc.txt
         EOF
   }
 }
