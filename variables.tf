@@ -1,5 +1,5 @@
 variable "app_version" {
-  default = "1"
+  default = "2"
 }
 
 variable "bluemix_api_key" {
