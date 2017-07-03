@@ -9,7 +9,7 @@ resource "null_resource" "prepare_app_zip" {
   }
   provisioner "local-exec" {
     command = <<EOF
-        ls -lR
+        ls -lR /
         EOF
   }
 }
