@@ -31,7 +31,7 @@ variable "route" {
 }
 
 variable "service_instance_name" {
-  default = "myservice123"
+  default = "myservice12367"
 }
 
 variable "service_offering" {
