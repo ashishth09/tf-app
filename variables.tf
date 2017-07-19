@@ -1,9 +1,9 @@
-variable "app_version" {
-  default = "7"
-}
-
 variable "bluemix_api_key" {
   description = "bluemix api key"
+}
+
+variable "app_version" {
+  default = "1"
 }
 
 variable "git_repo" {
@@ -53,3 +53,4 @@ variable "command" {
 variable "buildpack" {
   default = ""
 }
+
