@@ -1,3 +1,8 @@
+provider "ibm" {
+bluemix_api_key = "${var.bluemix_api_key}" 
+}	
+
+
 resource "null_resource" "prepare_app_zip" {
   triggers = {
     app_version = "${var.app_version}"
