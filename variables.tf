@@ -3,7 +3,7 @@ variable "bluemix_api_key" {
 }
 
 variable "app_version" {
-  default = "1"
+  default = "4"
 }
 
 variable "git_repo" {
