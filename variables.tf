@@ -27,7 +27,7 @@ variable "space" {
 }
 
 variable "route" {
-  default = "my-e2e-app-route-123"
+  default = "my-e2e-app-route-1234567"
 }
 
 variable "service_instance_name" {
