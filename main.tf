@@ -14,6 +14,6 @@ resource "ibm_service_instance" "service" {
   space_guid = "${data.ibm_space.space.id}"
   service    = "${var.service_offering}"
   plan       = "${var.plan}"
-  tags       = ["my-service"]
+  tags       = ["my-service34"]
 }
 
