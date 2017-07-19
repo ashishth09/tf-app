@@ -31,7 +31,7 @@ variable "route" {
 }
 
 variable "service_instance_name" {
-  default = "myservice"
+  default = "myservice123"
 }
 
 variable "service_offering" {
@@ -43,7 +43,7 @@ variable "plan" {
 }
 
 variable "app_name" {
-  default = "myapp"
+  default = "myapp123"
 }
 
 variable "command" {
