@@ -7,4 +7,13 @@ data "ibm_space" "space" {
   space = "${var.space}"
 }
 
-//dummy change
+
+data "ibm_app_domain_shared" "domain" {
+  name = "mybluemix.net"
+}
+
+resource "ibm_app_route" "route" {
+  domain_guid = "${data.ibm_app_domain_shared.domain.id}"
+  space_guid  = "${data.ibm_space.space.id}"
+  host        = "ashish-host"
+}
