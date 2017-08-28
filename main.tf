@@ -19,8 +19,8 @@ resource "ibm_app_route" "route" {
 }
 
 //Repeated to create error
-resource "ibm_app_route" "route1" {
+resource "ibm_app_route" "route" {
   domain_guid = "${data.ibm_app_domain_shared.domain.id}"
   space_guid  = "${data.ibm_space.space.id}"
-  host        = "${var.route}"
+  host        = "ashish-host"
 }
